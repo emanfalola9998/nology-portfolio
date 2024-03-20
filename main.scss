@@ -1,0 +1,40 @@
+@use './header.scss';
+
+$background-color: #fefbea;
+$border: 2px solid green;
+// $font-color
+// $secondary-colour
+
+
+
+* {
+    padding: 20px;
+    background-color: $background-color;
+    margin: 0px;
+}
+
+
+
+
+.main__role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: $border;
+}
+
+.main__role-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__role-image {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .main__role-image {
+        display: flex;
+    }
+}
+

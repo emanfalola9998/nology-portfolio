@@ -1,0 +1,25 @@
+$header-colour: #EF7C8E;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid green;
+    display: none;
+    .header-nav{
+        justify-content: space-around;
+        background-color: $header-colour;
+        .header-nav-link{
+            background-color: $header-colour;
+        }
+    }
+    
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header{
+        display: flex;
+    }
+}
