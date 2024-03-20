@@ -1,23 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid green;
   display: none;
-}
-.header .header-nav {
-  justify-content: space-around;
-  background-color: #EF7C8E;
-}
-.header .header-nav .header-nav-link {
-  background-color: #EF7C8E;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid green;
+  }
+  .header .header-nav {
+    justify-content: space-around;
+    background-color: #EF7C8E;
+  }
+  .header .header-nav .header-nav-link {
+    background-color: #EF7C8E;
+  }
+  .header .header-nav .header-nav-button {
+    border-radius: 3px;
+    border: 1px solid grey;
+  }
+  .header .header-nav .header-nav-button:hover {
+    background-color: lightblue;
   }
 }
+body {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   padding: 20px;
   background-color: #fefbea;

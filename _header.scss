@@ -1,25 +1,34 @@
-$header-colour: #EF7C8E;
+$header-background-colour: #EF7C8E;
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid green;
     display: none;
-    .header-nav{
-        justify-content: space-around;
-        background-color: $header-colour;
-        .header-nav-link{
-            background-color: $header-colour;
-        }
-    }
-    
 }
 
 
-
 @media screen and (min-width: 768px) {
-    .header{
+    .header {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid green;
+    
+        .header-nav {
+            justify-content: space-around;
+            background-color: $header-background-colour;
+    
+            .header-nav-link {
+                background-color: $header-background-colour;
+    
+            }
+            .header-nav-button {
+                border-radius: 3px;
+                border: 1px solid grey;
+            
+            &:hover {
+                background-color: lightblue;
+            }
+            }
+        }
+    
     }
 }
