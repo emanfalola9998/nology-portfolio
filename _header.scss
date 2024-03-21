@@ -12,17 +12,17 @@
         align-items: center;
         border: 2px solid green;
     
-        .header__nav {
+        &__nav {
             justify-content: space-around;
             background-color: $secondary-background-colour;
             border-radius: 6px;
             border: $secondary-border;
     
-            .header__nav-link {
+            &-link {
                 background-color: $secondary-background-colour;
     
             }
-            .header__nav-button {
+            &-button {
                 border-radius: 3px;
                 border: $secondary-border;
                 background-color: transparent;

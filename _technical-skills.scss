@@ -7,11 +7,11 @@
     flex-direction: column;
     border: $border;
 
-    .technical-skills__title {
+    &__title {
         text-decoration: underline;
     }
 
-    .technical-skills__images {
+    &__images {
         display: grid;
         border: $border;
         grid-template-columns: repeat(3, 1fr);
@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 768px) {
     .technical-skills{
-        .technical-skills__images{
+        &__images{
             grid-template-columns: repeat(9, 1fr);
             grid-template-rows: repeat(1, 1fr);
             grid-template-areas: 
@@ -79,6 +79,4 @@
             }
         }
     }
-
-
 }

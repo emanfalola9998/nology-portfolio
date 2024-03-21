@@ -6,21 +6,19 @@
     align-items: center;
     border: $primary-border;
 
-    .job-description__role-text {
+    &-text {
         display: flex;
         flex-direction: column;
     }
 
-    .job-description__role-image {
+    &-image {
         display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-
-    
     .job-description__role {
-        .job-description__role-image {
+        &-image {
             display: flex;
             max-width: 100%;
             height: auto;
