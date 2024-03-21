@@ -1,0 +1,30 @@
+@import './variables';
+
+.job-description__role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: $primary-border;
+
+    .job-description__role-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .job-description__role-image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    
+    .job-description__role {
+        .job-description__role-image {
+            display: flex;
+            max-width: 100%;
+            height: auto;
+            border-radius: 40px;
+        }
+    }
+}

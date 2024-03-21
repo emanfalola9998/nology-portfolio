@@ -14,17 +14,17 @@
     
         .header__nav {
             justify-content: space-around;
-            background-color: $header-background-colour;
+            background-color: $secondary-background-colour;
             border-radius: 6px;
-            border: $header-border;
+            border: $secondary-border;
     
             .header__nav-link {
-                background-color: $header-background-colour;
+                background-color: $secondary-background-colour;
     
             }
             .header__nav-button {
                 border-radius: 3px;
-                border: $header-border;
+                border: $secondary-border;
                 background-color: transparent;
             
             &:hover {

@@ -34,15 +34,6 @@ body {
   font-style: normal;
 }
 
-* {
-  background-color: #fefbea;
-  font: inherit;
-}
-
-h1 {
-  font-size: 32px;
-}
-
 .job-description__role {
   display: flex;
   justify-content: space-between;
@@ -57,6 +48,14 @@ h1 {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .job-description__role .job-description__role-image {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+  }
+}
 .about-me {
   display: flex;
   flex-direction: column;
@@ -73,6 +72,25 @@ h1 {
   flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .about-me.about-me--media-query {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-me__text-paragraph {
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-me__text-title {
+    font-size: 46px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+  }
+}
 .technical-skills {
   display: flex;
   justify-content: center;
@@ -123,20 +141,6 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-  * {
-    padding: 20px;
-    margin: 10px;
-  }
-  .job-description__role .job-description__role-image {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    border-radius: 40px;
-  }
-  .about-me.about-me--media-query {
-    display: flex;
-    flex-direction: row;
-  }
   .technical-skills .technical-skills__images {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -147,16 +151,18 @@ h1 {
     height: auto;
   }
 }
-@media screen and (min-width: 1200px) {
-  .about-me__text-paragraph {
-    font-size: 32px;
-    align-items: center;
-    justify-content: center;
-  }
-  .about-me__text-title {
-    font-size: 46px;
-    align-items: center;
-    justify-content: center;
-    text-decoration: underline;
+* {
+  background-color: #fefbea;
+  font: inherit;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    padding: 20px;
+    margin: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

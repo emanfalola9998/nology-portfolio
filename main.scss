@@ -1,19 +1,11 @@
 @use './header.scss';
-@use './typography.scss';
-@import './variables';
-
-// $background-color: #fefbea;
-// $border: 2px solid green;
-// $h1-font-size: 32px;
-
-// $font-color
-// $secondary-colour
-
-
+@use './typography';
+@use './jobdescription';
+@use './about-me';
+@use './technical-skills';
 
 * {
-
-    background-color: $background-color;
+    background-color: $primary-background-colour;
     font: inherit;
 }
 
@@ -21,110 +13,7 @@ h1 {
     font-size: $h1-font-size;
 }
 
-.job-description__role {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: $border;
 
-    .job-description__role-text {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .job-description__role-image {
-        display: none;
-    }
-}
-
-
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    border: $border;
-
-    .about-me__profile-picture {
-        clip-path: circle(40%);
-        width: 40%;
-        height: 40%;
-        // object-fit: cover;
-    }
-
-    .about-me__text {
-        display: flex;
-        flex-direction: column;
-        // width:40%;
-    }
-}
-
-
-
-.technical-skills {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    border: $border;
-
-    .technical-skills__title {
-        text-decoration: underline;
-    }
-
-    .technical-skills__images {
-        display: grid;
-        border: $border;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        text-align: center;
-        justify-content: center;
-        grid-template-areas:
-            "git html css"
-            "javascript scss bem"
-            "react java spring";
-        gap: 10px;
-        /* Optional: Add gap between grid items */
-    }
-
-
-
-    .technical-skills__images-git {
-        grid-area: git;
-
-    }
-
-    .technical-skills__images-html {
-        grid-area: html;
-    }
-
-    .technical-skills__images-css {
-        grid-area: css;
-    }
-
-    .technical-skills__images-javascript {
-        grid-area: javascript;
-    }
-
-    .technical-skills__images-scss {
-        grid-area: scss;
-    }
-
-    .technical-skills__images-bem {
-        grid-area: bem;
-    }
-
-    .technical-skills__images-react {
-        grid-area: react;
-    }
-
-    .technical-skills__images-java {
-        grid-area: java;
-    }
-
-    .technical-skills__images-spring {
-        grid-area: spring;
-    }
-}
 
 // -------------------------------------------------------------------media queries----------------------
 
@@ -133,50 +22,5 @@ h1 {
     * {
         padding: 20px;
         margin: 10px;
-    }
-    
-    .job-description__role {
-        .job-description__role-image {
-            display: flex;
-            max-width: 100%;
-            height: auto;
-            border-radius: 40px;
-        }
-    }
-
-
-    .about-me.about-me--media-query {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .technical-skills{
-        .technical-skills__images{
-            grid-template-columns: repeat(9, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            grid-template-areas: 
-            "git html css javascript scss bem react java spring";
-            img{
-                max-width: 100%;
-                height:auto;
-            }
-        }
-    }
-
-
-}
-
-@media screen and (min-width: 1200px) {
-    .about-me__text-paragraph {
-        font-size: 32px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .about-me__text-title {
-        font-size: 46px;
-        align-items: center;
-        justify-content: center;
-        text-decoration: underline;
     }
 }
