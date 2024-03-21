@@ -51,20 +51,11 @@ h1 {
   align-items: center;
   border: 2px solid green;
 }
-
-.job-description__role-text {
+.job-description__role .job-description__role-text {
   display: flex;
   flex-direction: column;
 }
-
-.job-description__role-text__title__image {
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
-  width: 50px;
-  height: 50px;
-}
-
-.job-description__role-image {
+.job-description__role .job-description__role-image {
   display: none;
 }
 
@@ -85,15 +76,13 @@ h1 {
   flex-direction: column;
   border: 2px solid green;
 }
-
-.about-me__profile-picture {
+.about-me .about-me__profile-picture {
   -webkit-clip-path: circle(40%);
           clip-path: circle(40%);
   width: 40%;
   height: 40%;
 }
-
-.about-me__text {
+.about-me .about-me__text {
   display: flex;
   flex-direction: column;
 }
@@ -110,4 +99,14 @@ h1 {
     justify-content: center;
     text-decoration: underline;
   }
+}
+.technical-skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border: 2px solid green;
+}
+.technical-skills .technical-skills__title {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
