@@ -1,5 +1,4 @@
-$header-background-colour: #D8A7B1;
-$header-border: 1px solid grey;
+@import './variables.scss';
 
 .header{
     display: none;
