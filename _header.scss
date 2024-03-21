@@ -1,4 +1,5 @@
 $header-background-colour: #EF7C8E;
+$header-border: 1px solid grey;
 
 .header{
     display: none;
@@ -12,17 +13,19 @@ $header-background-colour: #EF7C8E;
         align-items: center;
         border: 2px solid green;
     
-        .header-nav {
+        .header__nav {
             justify-content: space-around;
             background-color: $header-background-colour;
+            border-radius: 6px;
+            border: $header-border
     
-            .header-nav-link {
+            .header__nav-link {
                 background-color: $header-background-colour;
     
             }
-            .header-nav-button {
+            .header__nav-button {
                 border-radius: 3px;
-                border: 1px solid grey;
+                border: $header-border
             
             &:hover {
                 background-color: lightblue;

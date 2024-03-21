@@ -10,18 +10,20 @@
     align-items: center;
     border: 2px solid green;
   }
-  .header .header-nav {
+  .header .header__nav {
     justify-content: space-around;
     background-color: #EF7C8E;
+    border-radius: 6px;
+    border: 1px solid grey;
   }
-  .header .header-nav .header-nav-link {
+  .header .header__nav .header__nav-link {
     background-color: #EF7C8E;
   }
-  .header .header-nav .header-nav-button {
+  .header .header__nav .header__nav-button {
     border-radius: 3px;
     border: 1px solid grey;
   }
-  .header .header-nav .header-nav-button:hover {
+  .header .header__nav .header__nav-button:hover {
     background-color: lightblue;
   }
 }
@@ -56,5 +58,8 @@ body {
 @media screen and (min-width: 768px) {
   .main__role-image {
     display: flex;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
   }
 }/*# sourceMappingURL=main.css.map */
