@@ -12,12 +12,12 @@
   }
   .header .header__nav {
     justify-content: space-around;
-    background-color: #EF7C8E;
+    background-color: #D8A7B1;
     border-radius: 6px;
     border: 1px solid grey;
   }
   .header .header__nav .header__nav-link {
-    background-color: #EF7C8E;
+    background-color: #D8A7B1;
   }
   .header .header__nav .header__nav-button {
     border-radius: 3px;
@@ -37,6 +37,7 @@ body {
   padding: 20px;
   background-color: #fefbea;
   margin: 0px;
+  font: inherit;
 }
 
 .main__role {
