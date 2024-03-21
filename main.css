@@ -37,7 +37,7 @@ body {
 * {
   padding: 20px;
   background-color: #fefbea;
-  margin: 0px;
+  margin: 10px;
   font: inherit;
 }
 
@@ -83,6 +83,7 @@ h1 {
 .about-me {
   display: flex;
   flex-direction: column;
+  border: 2px solid green;
 }
 
 .about-me__profile-picture {
@@ -98,9 +99,15 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
-  .about-me__text {
+  .about-me__text-paragraph {
     font-size: 32px;
     align-items: center;
     justify-content: center;
+  }
+  .about-me__text-title {
+    font-size: 46px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
   }
 }/*# sourceMappingURL=main.css.map */
