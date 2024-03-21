@@ -26,6 +26,7 @@ $header-border: 1px solid grey;
             .header__nav-button {
                 border-radius: 3px;
                 border: $header-border;
+                background-color: transparent;
             
             &:hover {
                 background-color: lightblue;

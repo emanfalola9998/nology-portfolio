@@ -22,6 +22,7 @@
   .header .header__nav .header__nav-button {
     border-radius: 3px;
     border: 1px solid grey;
+    background-color: transparent;
   }
   .header .header__nav .header__nav-button:hover {
     background-color: lightblue;
@@ -40,27 +41,66 @@ body {
   font: inherit;
 }
 
-.main__role {
+h1 {
+  font-size: 32px;
+}
+
+.job-description__role {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid green;
 }
 
-.main__role-text {
+.job-description__role-text {
   display: flex;
   flex-direction: column;
 }
 
-.main__role-image {
+.job-description__role-text__title__image {
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  width: 50px;
+  height: 50px;
+}
+
+.job-description__role-image {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .main__role-image {
+  .job-description__role-image {
     display: flex;
     max-width: 100%;
     height: auto;
     border-radius: 40px;
+  }
+  .about-me.about-me--media-query {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__profile-picture {
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+  width: 40%;
+  height: 40%;
+}
+
+.about-me__text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-me__text {
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
