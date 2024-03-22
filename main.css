@@ -260,7 +260,7 @@ h3 {
   }
 }
 * {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   border: 0;
   font: inherit;
