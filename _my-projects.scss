@@ -60,14 +60,12 @@
             &-image{
                 grid-area:img;
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 height:auto;
-                object-fit: cover;
+                object-fit:contain;
             }
             &-text{
-                // &-description{
-                //     // media query increase font-size for larger screens
-                // }
+
                 &-button{
                     background-color: $secondary-background-colour;
                     color: $primary-background-colour;
@@ -85,17 +83,29 @@
 
 // ------------------------------------------------------------media queries---------------------------------------------
 
-@media screen and(min-width: 768px) {
-    .my-projects__card{
+@media screen and (min-width: 768px) {
+    .my-projects__cards{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
         justify-content: center;
         grid-template-areas: 
-        "project1 project2"
-        "project3 project4"
-        "project5 project6";
-        
+        "project1 project2 project3"
+        "project4 project5 project6";
         gap:10px;
+
+
+        &__section-1:nth-child(4) {
+            grid-area: project4;
+            display:block;
+        }
+        &__section-1:nth-child(5) {
+            grid-area: project5;
+            display:block;
+        }
+        &__section-1:nth-child(6) {
+            grid-area: project6;
+            display:block;
+        }
     }
     
 }
