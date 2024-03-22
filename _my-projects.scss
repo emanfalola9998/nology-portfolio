@@ -1,0 +1,104 @@
+@import './variables';
+
+.my-projects{
+    
+    // text-decoration: underline;
+    &__title{
+        text-align: center;
+        text-decoration: underline;
+    }
+    &__cards{
+        display:grid;
+        border: $border;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        // text-align: center;
+        justify-content: center;
+        grid-template-areas: 
+        "project1"
+        "project2"
+        "project3";
+        gap:10px;
+
+        &__section-1{
+            // grid-area: project1;
+            display: grid;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            // max-width: 25%;
+            margin: 100px auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "img"
+                "card-text";
+            
+            &:nth-child(1) {
+                grid-area: project1;
+            }
+            
+            &:nth-child(2) {
+                grid-area: project2;
+            }
+            
+            &:nth-child(3) {
+                grid-area: project3;
+            }
+            &:nth-child(4) {
+                grid-area: project4;
+                display:none;
+            }
+            &:nth-child(5) {
+                grid-area: project5;
+                display:none;
+            }
+            &:nth-child(6) {
+                grid-area: project6;
+                display:none;
+            }
+
+            &-image{
+                grid-area:img;
+                width: 100%;
+                height: 100%;
+                height:auto;
+                object-fit: cover;
+            }
+            &-text{
+                // &-description{
+                //     // media query increase font-size for larger screens
+                // }
+                &-button{
+                    background-color: $secondary-background-colour;
+                    color: $primary-background-colour;
+                    padding: 10px;
+                    border-radius: 3px;
+                    border:1px solid grey;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+
+}
+
+// ------------------------------------------------------------media queries---------------------------------------------
+
+@media screen and(min-width: 768px) {
+    .my-projects__card{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-content: center;
+        grid-template-areas: 
+        "project1 project2"
+        "project3 project4"
+        "project5 project6";
+        
+        gap:10px;
+    }
+    
+}
+
+
+

@@ -23,15 +23,12 @@
     
             }
             &-button {
-                border-radius: 3px;
-                border: $secondary-border;
+                // border-radius: 3px;
+                // border: $secondary-border;
                 background-color: transparent;
             
-            &:hover {
-                background-color: lightblue;
             }
             }
         }
     
     }
-}

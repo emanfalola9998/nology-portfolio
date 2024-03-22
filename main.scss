@@ -3,16 +3,30 @@
 @use './jobdescription';
 @use './about-me';
 @use './technical-skills';
+@use './my-projects';
+@import './variables';
 
 * {
     background-color: $primary-background-colour;
     font: inherit;
+    margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
 }
 
 h1 {
     font-size: $h1-font-size;
 }
 
+button {
+    background-color: $secondary-background-colour;
+    border-radius: 3px;
+    border: $secondary-border;
+    &:hover {
+        background-color: lightblue;
+    }
+}
 
 
 // -------------------------------------------------------------------media queries----------------------
@@ -24,3 +38,6 @@ h1 {
         margin: 10px;
     }
 }
+
+
+
