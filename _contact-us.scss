@@ -1,0 +1,33 @@
+@use './variables';
+
+.contact-us{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    // border: $border;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__email{
+        color:white;
+    }
+    &__links-cv,
+    &__links-github,
+    &__links-linkedin {
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+// ------------------------------------media queries-----------------------------------------------------
+
+@media screen  and  (min-width: 768px){
+    .contact-us{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+    

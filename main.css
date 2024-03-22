@@ -226,13 +226,39 @@ body {
     display: block;
   }
 }
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-us__email {
+  color: white;
+}
+.contact-us__links-cv, .contact-us__links-github, .contact-us__links-linkedin {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 * {
-  background-color: #fefbea;
-  font: inherit;
   margin: 0;
   padding: 0;
   border: 0;
+  font: inherit;
   font-size: 100%;
+}
+
+body {
+  background-color: #fefbea;
 }
 
 h1 {
@@ -250,7 +276,7 @@ button:hover {
 
 @media screen and (min-width: 768px) {
   * {
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
