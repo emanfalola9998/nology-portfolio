@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid green;
   }
   .header__nav {
     justify-content: space-around;
@@ -29,11 +28,14 @@ body {
   font-style: normal;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 .job-description__role {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid green;
 }
 .job-description__role-text {
   display: flex;
@@ -54,7 +56,6 @@ body {
 .about-me {
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
 }
 .about-me__profile-picture {
   -webkit-clip-path: circle(40%);
@@ -91,14 +92,12 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  border: 2px solid green;
 }
 .technical-skills__title {
   text-decoration: underline;
 }
 .technical-skills__images {
   display: grid;
-  border: 2px solid green;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   text-align: center;
@@ -140,6 +139,7 @@ body {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "git html css javascript scss bem react java spring";
+    place-items: center;
   }
   .technical-skills__images img {
     max-width: 100%;
@@ -152,7 +152,6 @@ body {
 }
 .my-projects__cards {
   display: grid;
-  border: 2px solid green;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
   justify-content: center;
@@ -161,7 +160,6 @@ body {
 }
 .my-projects__cards__section-1 {
   display: grid;
-  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 100px auto;
   grid-template-columns: 1fr;

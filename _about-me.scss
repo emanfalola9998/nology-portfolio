@@ -3,7 +3,7 @@
 .about-me {
     display: flex;
     flex-direction: column;
-    border: $border;
+    // border: $border;
 
     &__profile-picture {
         clip-path: circle(40%);
