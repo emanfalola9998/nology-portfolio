@@ -194,13 +194,19 @@ h3 {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.my-projects__cards__section-1-text-button {
+.my-projects__cards__section-1-text-button-1 {
   background-color: #D8A7B1;
   color: #fefbea;
   padding: 10px;
   border-radius: 3px;
   border: 1px solid grey;
-  margin-left: 30px;
+}
+.my-projects__cards__section-1-text-button-2 {
+  background-color: #D8A7B1;
+  color: #fefbea;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid grey;
 }
 
 @media screen and (min-width: 768px) {
@@ -222,6 +228,12 @@ h3 {
   .my-projects__cards__section-1:nth-child(6) {
     grid-area: project6;
     display: block;
+  }
+  .my-projects__cards__section-1-text-button-1 {
+    margin-left: 20px;
+  }
+  .my-projects__cards__section-1-image {
+    max-width: 85%;
   }
 }
 .contact-us {

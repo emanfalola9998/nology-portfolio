@@ -66,13 +66,21 @@
             }
             &-text{
 
-                &-button{
+                &-button-1{
                     background-color: $secondary-background-colour;
                     color: $primary-background-colour;
                     padding: 10px;
                     border-radius: 3px;
                     border:1px solid grey;
-                    margin-left: 30px;
+                    // margin-left: 20px;
+                }
+                &-button-2{
+                    background-color: $secondary-background-colour;
+                    color: $primary-background-colour;
+                    padding: 10px;
+                    border-radius: 3px;
+                    border:1px solid grey;
+                    // margin-right: 30px;
                 }
             }
         }
@@ -92,19 +100,27 @@
         "project1 project2 project3"
         "project4 project5 project6";
         gap:10px;
+        
 
-
-        &__section-1:nth-child(4) {
-            grid-area: project4;
-            display:block;
-        }
-        &__section-1:nth-child(5) {
-            grid-area: project5;
-            display:block;
-        }
-        &__section-1:nth-child(6) {
-            grid-area: project6;
-            display:block;
+        &__section-1{
+            &:nth-child(4) {
+                grid-area: project4;
+                display:block;
+            }
+            &:nth-child(5) {
+                grid-area: project5;
+                display:block;
+            }
+            &:nth-child(6) {
+                grid-area: project6;
+                display:block;
+            }
+            &-text-button-1{
+                margin-left: 20px;
+            }
+            &-image{
+                max-width: 85%;
+            }
         }
     }
     
