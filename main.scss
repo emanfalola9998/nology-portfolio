@@ -21,6 +21,12 @@ body{
 
 h1 {
     font-size: $h1-font-size;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+p{
+    margin-bottom: 30px;
 }
 
 button {

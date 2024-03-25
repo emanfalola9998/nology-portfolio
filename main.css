@@ -66,23 +66,28 @@ h3 {
 .about-me__profile-picture {
   -webkit-clip-path: circle(40%);
           clip-path: circle(40%);
-  width: 40%;
-  height: 40%;
+  width: 100%;
+  height: auto;
 }
+.about-me__text {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
-  .about-me.about-me--media-query {
+  .about-me {
     display: flex;
     flex-direction: row;
     padding: 10px;
     margin: 50px;
   }
-  .about-me.about-me--media-query__text-paragraph {
-    align-items: center;
-    justify-content: center;
+  .about-me__profile-picture {
+    width: 400px;
   }
-  .about-me.about-me--media-query__text-title {
-    align-items: center;
-    justify-content: center;
+  .about-me__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .technical-skills {
@@ -142,10 +147,6 @@ h3 {
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "git html css javascript scss bem react java spring";
     place-items: center;
-  }
-  .technical-skills__images img {
-    max-width: 100%;
-    height: auto;
   }
 }
 .my-projects__title {
@@ -274,6 +275,12 @@ body {
 
 h1 {
   font-size: 32px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 30px;
 }
 
 button {
