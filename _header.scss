@@ -10,6 +10,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px;
+        margin: 50px;
         // border: 2px solid green;
     
         &__nav {
@@ -17,6 +19,7 @@
             background-color: $secondary-background-colour;
             border-radius: 6px;
             border: $secondary-border;
+            
     
             &-link {
                 background-color: $secondary-background-colour;

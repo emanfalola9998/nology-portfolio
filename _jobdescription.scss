@@ -1,6 +1,6 @@
 @import './variables';
 
-.job-description__role {
+.job-description {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    .job-description__role {
+    .job-description {
+        margin:50px;
+        padding:10px;
+
         &-image {
             display: flex;
             max-width: 100%;

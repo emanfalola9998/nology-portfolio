@@ -62,7 +62,7 @@
                 width: 100%;
                 // height: 100%;
                 height:auto;
-                object-fit:contain;
+                object-fit:cover;
             }
             &-text{
 
@@ -93,6 +93,8 @@
 
 @media screen and (min-width: 768px) {
     .my-projects__cards{
+        margin:50px;
+        padding:10px;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
         justify-content: center;
@@ -115,9 +117,9 @@
                 grid-area: project6;
                 display:block;
             }
-            &-text-button-1{
-                margin-left: 20px;
-            }
+            // &-text-button-1{
+            //     // margin-left: 20px;
+            // }
             &-image{
                 max-width: 85%;
             }

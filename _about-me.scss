@@ -1,7 +1,5 @@
 @import './variables';
 
-@import './variables';
-
 .about-me {
     display: flex;
     flex-direction: column;
@@ -11,9 +9,14 @@
         clip-path: circle(40%);
         width: 40%;
         height: 40%;
+        // object-fit: cover;
         // order: 1;
     }
 
+
+        // display: flex;
+        // flex-direction: column;
+        // width:40%;
         &__text-paragraph{
             // order: 2;
         }
@@ -24,25 +27,32 @@
 
 @media screen and (min-width: 768px) {
     .about-me.about-me--media-query {
-        display: flex;
-        flex-direction: row;
-    }
-    .about-me__text-paragraph {
-        font-size: 32px;
-        align-items: center;
-        justify-content: center;
-        // order:1;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin: 50px;
+
+            &__profile-picture{
+
+            }
+            &__text{
+
+                &-paragraph {
+                    align-items: center;
+                    justify-content: center;
+                    // order:1;
+                }
+        
+                &-title {
+                    align-items: center;
+                    justify-content: center;
+                    // order:1;
+                }
+                
+            }
+    
+
+        }   
     }
 
-    .about-me__text-title {
-        font-size: 46px;
-        align-items: center;
-        justify-content: center;
-        text-decoration: underline;
-        // order:1;
-    }
-    .about-me__profile-picture{
-        // order:-1;
-    }
-}
 

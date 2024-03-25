@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    margin: 50px;
   }
   .header__nav {
     justify-content: space-around;
@@ -32,21 +34,25 @@ h3 {
   font-size: 22px;
 }
 
-.job-description__role {
+.job-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.job-description__role-text {
+.job-description-text {
   display: flex;
   flex-direction: column;
 }
-.job-description__role-image {
+.job-description-image {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .job-description__role-image {
+  .job-description {
+    margin: 50px;
+    padding: 10px;
+  }
+  .job-description-image {
     display: flex;
     max-width: 100%;
     height: auto;
@@ -67,17 +73,16 @@ h3 {
   .about-me.about-me--media-query {
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    margin: 50px;
   }
-  .about-me__text-paragraph {
-    font-size: 32px;
+  .about-me.about-me--media-query__text-paragraph {
     align-items: center;
     justify-content: center;
   }
-  .about-me__text-title {
-    font-size: 46px;
+  .about-me.about-me--media-query__text-title {
     align-items: center;
     justify-content: center;
-    text-decoration: underline;
   }
 }
 .technical-skills {
@@ -128,6 +133,10 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .technical-skills {
+    padding: 10px;
+    margin: 50px;
+  }
   .technical-skills__images {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -182,8 +191,8 @@ h3 {
   grid-area: img;
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .my-projects__cards__section-1-text-button-1 {
   background-color: #D8A7B1;
@@ -202,6 +211,8 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .my-projects__cards {
+    margin: 50px;
+    padding: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
@@ -219,9 +230,6 @@ h3 {
   .my-projects__cards__section-1:nth-child(6) {
     grid-area: project6;
     display: block;
-  }
-  .my-projects__cards__section-1-text-button-1 {
-    margin-left: 20px;
   }
   .my-projects__cards__section-1-image {
     max-width: 85%;
@@ -245,6 +253,8 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .contact-us {
+    margin: 50px;
+    padding: 10px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -273,11 +283,4 @@ button {
 }
 button:hover {
   background-color: lightblue;
-}
-
-@media screen and (min-width: 768px) {
-  * {
-    padding: 10px;
-    margin: 10px;
-  }
 }/*# sourceMappingURL=main.css.map */
