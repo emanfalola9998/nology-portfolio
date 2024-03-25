@@ -23,14 +23,12 @@
             "javascript scss bem"
             "react java spring";
         gap: 10px;
-        /* Optional: Add gap between grid items */
     }
 
 
 
     .technical-skills__images-git {
         grid-area: git;
-
     }
 
     .technical-skills__images-html {
@@ -77,8 +75,6 @@
             grid-template-areas: 
             "git html css javascript scss bem react java spring";
             place-items: center;
-
         }
     }
-
 }

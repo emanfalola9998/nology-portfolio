@@ -107,7 +107,6 @@ h3 {
   justify-content: center;
   grid-template-areas: "git html css" "javascript scss bem" "react java spring";
   gap: 10px;
-  /* Optional: Add gap between grid items */
 }
 .technical-skills .technical-skills__images-git {
   grid-area: git;
@@ -246,10 +245,6 @@ h3 {
 }
 .contact-us__email {
   color: white;
-}
-.contact-us__links-cv, .contact-us__links-github, .contact-us__links-linkedin {
-  margin: 0;
-  padding: 0;
 }
 
 @media screen and (min-width: 768px) {

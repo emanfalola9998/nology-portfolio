@@ -19,19 +19,15 @@
             background-color: $secondary-background-colour;
             border-radius: 6px;
             border: $secondary-border;
-            
-    
+
             &-link {
                 background-color: $secondary-background-colour;
-    
             }
             &-button {
                 // border-radius: 3px;
                 // border: $secondary-border;
                 background-color: transparent;
-            
             }
         }
     }
-    
 }

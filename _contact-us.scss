@@ -12,12 +12,6 @@
     &__email{
         color:white;
     }
-    &__links-cv,
-    &__links-github,
-    &__links-linkedin {
-        margin: 0;
-        padding: 0;
-    }
     
 }
 
@@ -31,6 +25,5 @@
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-
 }
-    
+
