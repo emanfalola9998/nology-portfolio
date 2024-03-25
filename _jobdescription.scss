@@ -6,11 +6,10 @@
     align-items: center;
     // border: $primary-border;
 
-    &-text {
+    &__text {
         display: flex;
         flex-direction: column;
     }
-
     &-image {
         display: none;
     }

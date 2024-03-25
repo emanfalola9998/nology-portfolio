@@ -39,7 +39,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-.job-description-text {
+.job-description__text {
   display: flex;
   flex-direction: column;
 }
@@ -127,31 +127,31 @@ h3 {
   grid-template-areas: "git html css" "javascript scss bem" "react java spring";
   gap: 10px;
 }
-.technical-skills .technical-skills__images-git {
+.technical-skills__images-technical-skills__images-git {
   grid-area: git;
 }
-.technical-skills .technical-skills__images-html {
+.technical-skills__images-technical-skills__images-html {
   grid-area: html;
 }
-.technical-skills .technical-skills__images-css {
+.technical-skills__images-technical-skills__images-css {
   grid-area: css;
 }
-.technical-skills .technical-skills__images-javascript {
+.technical-skills__images-technical-skills__images-javascript {
   grid-area: javascript;
 }
-.technical-skills .technical-skills__images-scss {
+.technical-skills__images-technical-skills__images-scss {
   grid-area: scss;
 }
-.technical-skills .technical-skills__images-bem {
+.technical-skills__images-technical-skills__images-bem {
   grid-area: bem;
 }
-.technical-skills .technical-skills__images-react {
+.technical-skills__images-technical-skills__images-react {
   grid-area: react;
 }
-.technical-skills .technical-skills__images-java {
+.technical-skills__images-technical-skills__images-java {
   grid-area: java;
 }
-.technical-skills .technical-skills__images-spring {
+.technical-skills__images-technical-skills__images-spring {
   grid-area: spring;
 }
 
@@ -180,7 +180,7 @@ h3 {
 }
 .my-projects__cards__section-1 {
   display: grid;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "img" "card-text";
@@ -251,7 +251,7 @@ h3 {
     display: block;
   }
   .my-projects__cards__section-1-image {
-    max-width: 85%;
+    max-width: 95%;
   }
 }
 .contact-us {
