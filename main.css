@@ -54,7 +54,7 @@ h3 {
   }
   .job-description-image {
     display: flex;
-    max-width: 100%;
+    width: 20%;
     height: auto;
     border-radius: 40px;
   }
