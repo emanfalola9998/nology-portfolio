@@ -63,18 +63,11 @@ h3 {
   width: 40%;
   height: 40%;
 }
-.about-me__text {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (min-width: 768px) {
   .about-me.about-me--media-query {
     display: flex;
     flex-direction: row;
   }
-}
-@media screen and (min-width: 1200px) {
   .about-me__text-paragraph {
     font-size: 32px;
     align-items: center;
@@ -156,7 +149,6 @@ h3 {
   grid-template-rows: repeat(3, 1fr);
   justify-content: center;
   grid-template-areas: "project1" "project2" "project3";
-  gap: 10px;
 }
 .my-projects__cards__section-1 {
   display: grid;
@@ -238,7 +230,7 @@ h3 {
 }
 .contact-us {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   background-color: black;
   justify-content: space-evenly;
