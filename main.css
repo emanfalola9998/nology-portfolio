@@ -230,7 +230,7 @@ h3 {
 }
 .contact-us {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-between;
   background-color: black;
   justify-content: space-evenly;
@@ -247,7 +247,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .contact-us {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
