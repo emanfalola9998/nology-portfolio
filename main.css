@@ -89,7 +89,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .about-me__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr;
     grid-template-areas: "img title" "img paragraph";
   }
@@ -100,8 +100,9 @@ h3 {
     margin: 50px;
   }
   .about-me__profile-picture {
-    width: 400px;
+    width: 800px;
     grid-area: img;
+    justify-self: center; /* Adjust as needed */
   }
   .about-me__text {
     display: flex;
@@ -113,6 +114,7 @@ h3 {
   }
   .about-me__text-title {
     grid-area: title;
+    max-height: 50px;
   }
 }
 .technical-skills {
