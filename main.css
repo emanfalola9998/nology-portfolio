@@ -100,7 +100,7 @@ h3 {
     margin: 50px;
   }
   .about-me__profile-picture {
-    width: 800px;
+    width: 400px;
     grid-area: img;
     justify-self: center; /* Adjust as needed */
   }
