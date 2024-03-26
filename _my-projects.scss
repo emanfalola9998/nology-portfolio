@@ -83,8 +83,8 @@
 
 @media screen and (min-width: 768px) {
     .my-projects__cards{
-        margin:50px;
-        padding:10px;
+        margin: $margin-for-desktop;
+        padding: $padding-for-desktop;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
         justify-content: center;

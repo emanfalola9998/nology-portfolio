@@ -10,8 +10,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
-        margin: 50px;
+        padding: $padding-for-desktop;
+        margin: $margin-for-desktop;
         // border: 2px solid green;
     
         &__nav {

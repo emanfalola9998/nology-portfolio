@@ -19,44 +19,14 @@
         text-align: center;
         justify-content: center;
         grid-template-areas:
-            "git html css"
+            "git html5 css"
             "javascript scss bem"
             "react java spring";
         gap: 10px;
-        &-technical-skills__images-git {
-            grid-area: git;
-        }
-    
-        &-technical-skills__images-html {
-            grid-area: html;
-        }
-    
-        &-technical-skills__images-css {
-            grid-area: css;
-        }
-    
-        &-technical-skills__images-javascript {
-            grid-area: javascript;
-        }
-    
-        &-technical-skills__images-scss {
-            grid-area: scss;
-        }
-    
-        &-technical-skills__images-bem {
-            grid-area: bem;
-        }
-    
-        &-technical-skills__images-react {
-            grid-area: react;
-        }
-    
-        &-technical-skills__images-java {
-            grid-area: java;
-        }
-    
-        &-technical-skills__images-spring {
-            grid-area: spring;
+        @each $skill in git, html5, css, javascript, scss, bem, react, java, spring {
+            &-technical-skills__images-#{$skill} {
+                grid-area: #{$skill};
+            }
         }
     }
 }
@@ -66,8 +36,8 @@
 
 @media screen and (min-width: 768px) {
     .technical-skills{
-        padding: 10px;
-        margin: 50px;
+        padding: $padding-for-desktop;
+        margin: $margin-for-desktop;
 
         &__images{
             grid-template-columns: repeat(9, 1fr);

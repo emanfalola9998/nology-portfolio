@@ -35,8 +35,8 @@
     .about-me {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    margin: 50px;
+    padding: $padding-for-desktop;
+    margin: $margin-for-desktop;
 
     &__content{
         display: grid;
