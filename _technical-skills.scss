@@ -1,11 +1,8 @@
-@import './variables';
-
 .technical-skills {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    // border: $border;
 
     &__title {
         text-decoration: underline;
@@ -13,7 +10,6 @@
 
     &__images {
         display: grid;
-        // border: $border;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         text-align: center;
@@ -23,13 +19,14 @@
             "javascript scss bem"
             "react java spring";
         gap: 10px;
-        @each $skill in git, html5, css, javascript, scss, bem, react, java, spring {
-            &-technical-skills__images-#{$skill} {
-                grid-area: #{$skill};
+        @each $skill in (git, html5, css, javascript, scss, bem, react, java, spring) {
+            &-#{$skill} {
+                grid-area: "#{$skill}";
             }
         }
     }
 }
+
 
 
 
