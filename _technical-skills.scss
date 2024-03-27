@@ -19,13 +19,14 @@
             "javascript scss bem"
             "react java spring";
         gap: 10px;
-        @each $skill in (git, html5, css, javascript, scss, bem, react, java, spring) {
+        @each $skill in git, html5, css, javascript, scss, bem, react, java, spring {
             &-#{$skill} {
-                grid-area: "#{$skill}";
+                grid-area: #{$skill}; // Removed the quotes around #{$skill}
             }
         }
     }
 }
+
 
 
 
